@@ -1363,7 +1363,7 @@
           "info": "Customize [filters](/admin/menus)"
         },
         "filter_type": {
-          "label": "Filter type",
+          "label": "Desktop filter type",
           "options__1": {
             "label": "Vertical"
           },
@@ -1372,7 +1372,8 @@
           },
           "options__3": {
             "label": "Drawer"
-          }
+          },
+          "info": "Drawer is the default mobile layout."
         },
         "enable_sorting": {
           "label": "Enable sorting"
