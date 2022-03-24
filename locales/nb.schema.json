@@ -1289,6 +1289,19 @@
           "options__2": {
             "label": "2 kolonner"
           }
+        },
+        "filter_type": {
+          "label": "Filtreringsoppsett på datamaskin",
+          "options__1": {
+            "label": "Horisontalt"
+          },
+          "options__2": {
+            "label": "Vertikalt"
+          },
+          "options__3": {
+            "label": "Skuff"
+          },
+          "info": "Skuff er standardoppsett for mobil."
         }
       }
     },

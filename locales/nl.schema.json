@@ -1289,6 +1289,19 @@
           "options__2": {
             "label": "2 kolommen"
           }
+        },
+        "filter_type": {
+          "label": "Opmaak voor desktopfilter",
+          "options__1": {
+            "label": "Horizontaal"
+          },
+          "options__2": {
+            "label": "Verticaal"
+          },
+          "options__3": {
+            "label": "Lade"
+          },
+          "info": "Lade is de standaardopmaak voor mobiele apparaten"
         }
       }
     },

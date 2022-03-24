@@ -1289,6 +1289,19 @@
           "options__2": {
             "label": "2 sloupce"
           }
+        },
+        "filter_type": {
+          "label": "Rozvržení filtru v počítači",
+          "options__1": {
+            "label": "Vodorovně"
+          },
+          "options__2": {
+            "label": "Svisle"
+          },
+          "options__3": {
+            "label": "Výsuvný panel"
+          },
+          "info": "Výchozí mobilní rozvržení představuje výsuvný panel."
         }
       }
     },

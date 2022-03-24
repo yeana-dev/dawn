@@ -1289,6 +1289,19 @@
           "options__2": {
             "label": "2 sütun"
           }
+        },
+        "filter_type": {
+          "label": "Masaüstü filtre düzeni",
+          "options__1": {
+            "label": "Yatay"
+          },
+          "options__2": {
+            "label": "Dikey"
+          },
+          "options__3": {
+            "label": "Çekmece"
+          },
+          "info": "Çekmece, varsayılan mobil düzendir."
         }
       }
     },
