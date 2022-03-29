@@ -1,12 +1,26 @@
 <!-- Welcome section starts -->
 <section class="FAQ">
-  <h1>FAQ</h1>
+  <header>
+    <h1>FAQ</h1>
+  </header>
 </section>
 <!-- Welcome section ends -->
 {% schema %}
 {
 "name": "FAQ",
-"settings": [],
+"settings": [
+{
+"type": "text",
+"id": "question",
+"label": "Question"
+}
+],
+"blocks": [
+{
+"name": "Answer",
+"type": "text"
+}
+],
 "presets": [
 {
 "name": "FAQ Section",
