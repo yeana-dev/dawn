@@ -1,10 +1,8 @@
 <!-- Welcome section starts -->
-<section class="FAQ">
-  {% for block in section.blocks %}
-  <h2>{{ block.settings.question }}</h2>
-  <p>{{ block.settings.answer }}</p>
-  {% endfor %}
-</section>
+{% for block in section.blocks %}
+<h2>{{ block.settings.question }}</h2>
+<p>{{ block.settings.answer }}</p>
+{% endfor %}
 <!-- Welcome section ends -->
 {% schema %}
 {
