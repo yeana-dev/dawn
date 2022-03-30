@@ -9,6 +9,26 @@
     },
     "16485954967d166f00": {
       "type": "FAQ",
+      "blocks": {
+        "87d61ede-8aea-47ef-bc2c-91f9715208a1": {
+          "type": "questions",
+          "settings": {
+            "question": "Test Question 1",
+            "answer": "Test Answer 1"
+          }
+        },
+        "7233c398-1b82-4f77-aef4-5212a2f29353": {
+          "type": "questions",
+          "settings": {
+            "question": "Test Question 2",
+            "answer": "Test Answer 2"
+          }
+        }
+      },
+      "block_order": [
+        "87d61ede-8aea-47ef-bc2c-91f9715208a1",
+        "7233c398-1b82-4f77-aef4-5212a2f29353"
+      ],
       "settings": {
       }
     }
