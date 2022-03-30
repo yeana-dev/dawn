@@ -23,11 +23,19 @@
             "question": "Test Question 2",
             "answer": "Test Answer 2"
           }
+        },
+        "4a81e614-6b2c-4dfd-8100-7226b1a64d0f": {
+          "type": "questions",
+          "settings": {
+            "question": "Test Question 3",
+            "answer": "Test Question 3"
+          }
         }
       },
       "block_order": [
         "87d61ede-8aea-47ef-bc2c-91f9715208a1",
-        "7233c398-1b82-4f77-aef4-5212a2f29353"
+        "7233c398-1b82-4f77-aef4-5212a2f29353",
+        "4a81e614-6b2c-4dfd-8100-7226b1a64d0f"
       ],
       "settings": {
       }
