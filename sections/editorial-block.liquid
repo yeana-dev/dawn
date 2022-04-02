@@ -1,0 +1,126 @@
+{{ 'section-editorial-block.css' | asset_url | stylesheet_tag }}
+<div class="editorial-block__desktop">
+  <div class="editorial-block__left">
+    <header class="editorial-block__left--header">
+      <h1>{{ section.settings.editorial-block__heading--left }}</h1>
+      <p>{{ section.settings.editorial-block__body--left }}</p>
+      <a href="{{ section.settings.editorial-block__button-link--left }}">{{ section.settings.editorial-block__button-text--left }}
+        &#8594;</a>
+    </header>
+    <img src="{{ section.settings.editorial-block__image--left | image_url }}" alt="img"/>
+  </div>
+  <div class="editorial-block__right">
+    <img src="{{ section.settings.editorial-block__image--right | image_url }}" alt="img"/>
+    <header class="editorial-block__right--header">
+      <h1>{{ section.settings.editorial-block__heading--right }}</h1>
+      <p>{{ section.settings.editorial-block__body--right }}</p>
+      <a href="{{ section.settings.editorial-block__button-link--left }}">{{ section.settings.editorial-block__button-text--right }}
+        &#8594;</a>
+    </header>
+  </div>
+</div>
+
+<div class="editorial-block__mobile">
+  <div class="carousel">
+    <div class="carousel--1">
+      <img id="slide-1" src="{{ section.settings.editorial-block__image--left | image_url }}" alt="img"/>
+      <header class="slide-header">
+        <h1>{{ section.settings.editorial-block__heading--left }}</h1>
+        <p>{{ section.settings.editorial-block__body--left }}</p>
+        <a href="{{ section.settings.editorial-block__button-link--left }}">{{ section.settings.editorial-block__button-text--right }}
+          &#8594;</a>
+      </header>
+    </div>
+    <div class="carousel--2">
+      <img id="slide-2" src="{{ section.settings.editorial-block__image--right | image_url }}" alt="img"/>
+      <header class="slide-header">
+        <h1>{{ section.settings.editorial-block__heading--right }}</h1>
+        <p>{{ section.settings.editorial-block__body--right }}</p>
+        <a href="{{ section.settings.editorial-block__button-link--left }}">{{ section.settings.editorial-block__button-text--right }}
+          &#8594;</a>
+      </header>
+    </div>
+  </div>
+  <div class="carousel-btn-container">
+    <a class="carousel-btn active" href="#slide-1">&nbsp;</a>
+    <a class="carousel-btn" href="#slide-2">&nbsp;</a>
+  </div>
+</div>
+
+{% schema %}
+
+{
+  "name": "Editorial Block",
+  "tag": "section",
+  "class": "editorial-block",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "editorial-block__image--left",
+      "label": "Left Column Image"
+    }, {
+      "type": "text",
+      "id": "editorial-block__heading--left",
+      "label": "Left Column Heading Text"
+    }, {
+      "type": "text",
+      "id": "editorial-block__body--left",
+      "label": "Left Column Body Text"
+    }, {
+      "type": "text",
+      "id": "editorial-block__button-text--left",
+      "label": "Left Column Button Text"
+    }, {
+      "type": "url",
+      "id": "editorial-block__button-link--left",
+      "label": "Left Column Button Link"
+    }, {
+      "type": "image_picker",
+      "id": "editorial-block__image--right",
+      "label": "Right Column Image"
+    }, {
+      "type": "text",
+      "id": "editorial-block__heading--right",
+      "label": "Right Column Heading Text"
+    }, {
+      "type": "text",
+      "id": "editorial-block__body--right",
+      "label": "Right Column Body Text"
+    }, {
+      "type": "text",
+      "id": "editorial-block__button-text--right",
+      "label": "Right Column Button Text"
+    }, {
+      "type": "url",
+      "id": "editorial-block__button-link--right",
+      "label": "Right Column Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Editorial Block",
+      "category": "Editorial Block"
+    }
+  ]
+}
+
+{% endschema %}
+{% stylesheet %}
+
+
+
+{% endstylesheet %}
+{% javascript %}
+let btnContainer = document.getElementsByClassName("carousel-btn-container")[0];
+let btns = document.getElementsByClassName("carousel-btn");
+
+for (let i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function () {
+    let current = document.getElementsByClassName("active");
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace(" active", "");
+    }
+    this.className += " active";
+  })
+}
+{% endjavascript %}

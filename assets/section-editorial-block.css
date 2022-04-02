@@ -1,0 +1,134 @@
+/* Resetting default margins */
+.editorial-block h1,
+.editorial-block p {
+  margin: 0;
+}
+
+.editorial-block {
+  box-sizing: border-box;
+}
+
+.editorial-block__desktop {
+  margin: 0 auto;
+  max-width: 1100px;
+  justify-content: space-between;
+}
+
+.editorial-block__left,
+.editorial-block__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.editorial-block__left {
+  width: 40%;
+  align-self: flex-end;
+  margin-top: 100px;
+}
+
+.editorial-block__right {
+  width: 55%;
+}
+
+.editorial-block__left--header,
+.editorial-block__right--header {
+  width: 300px;
+  margin: 30px;
+}
+
+.editorial-block__right--header {
+  width: 350px;
+  align-self: flex-end;
+}
+
+.editorial-block a {
+  font-size: 22px;
+  color: #453360;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "DMSerifDisplay-Regular";
+  font-weight: 700;
+}
+
+.editorial-block h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: "GothamMedium" !important;
+  font-weight: 700;
+}
+
+.editorial-block p {
+  font-family: "GothamBook" !important;
+  font-size: 16px;
+}
+
+/* Mobile */
+.carousel-btn-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.carousel {
+  display: flex;
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel--1,
+.carousel--2 {
+  width: 100vw;
+  height: 550px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.carousel img {
+  width: 100%;
+  height: 315px;
+  object-fit: cover;
+}
+
+.carousel .slide-header {
+  padding: 0 30px;
+  height: 235px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.carousel-btn {
+  height: 15px;
+  width: 15px;
+  background-color: #453360;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0;
+}
+
+.carousel-btn-container .active {
+  background-color: white;
+  border: 1px solid #a7a7a7;
+}
+
+.editorial-block__desktop {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .editorial-block__desktop {
+    display: flex;
+  }
+  .editorial-block__mobile {
+    display: none;
+  }
+}

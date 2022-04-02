@@ -22,6 +22,12 @@
   height: 52.5rem;
 }
 
+/* FAQ Section Styling */
 .faq {
+  max-width: 72.6rem;
+  margin: 0 auto;
+}
+
+.faq > * {
   color: green;
 }

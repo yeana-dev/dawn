@@ -1,0 +1,60 @@
+{{ "section-single-block-padding.css" | asset_url | stylesheet_tag }}
+
+<img src="{{ section.settings.icon_img | image_url }}" alt="img"/>
+<h1>{{ section.settings.heading }}</h1>
+<img src="{{ section.settings.main_img_desktop | image_url }}" alt="img" class="main-img__desktop"/>
+<img src="{{ section.settings.main_img_mobile | image_url }}" alt="img" class="main-img__mobile"/>
+<a href="{{ section.settings.button_link }}">{{ section.settings.button_text }}</a>
+{% schema %}
+
+{
+  "name": "Single block with padding",
+  "tag": "section",
+  "class": "single-block-with-padding",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "icon_img",
+      "label": "Icon Image"
+    }, {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading Text"
+    }, {
+      "type": "image_picker",
+      "id": "main_img_desktop",
+      "label": "Main Image (Desktop)"
+    }, {
+      "type": "image_picker",
+      "id": "main_img_mobile",
+      "label": "Main Image (Mobile)"
+    }, {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    }, {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Single block with padding",
+      "category": "Single block"
+    }
+  ]
+}
+
+{% endschema %}
+{% stylesheet %}
+
+
+
+{%
+endstylesheet %}
+{% javascript %}
+
+
+
+{% endjavascript %}

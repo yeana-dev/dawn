@@ -1,0 +1,37 @@
+.single-block-with-padding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.single-block-with-padding h1 {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.single-block-with-padding a {
+  margin-top: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #453360;
+  padding: 15px 22px;
+  border: 2px solid #453360;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.main-img__desktop {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .main-img__desktop {
+    display: block;
+  }
+  .main-img__mobile {
+    display: none;
+  }
+}
