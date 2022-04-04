@@ -28,14 +28,22 @@
           "type": "questions",
           "settings": {
             "question": "Test Question 3",
-            "answer": "Test Question 3"
+            "answer": "Test Answer 3"
+          }
+        },
+        "34c143d3-c627-4007-8976-9eb0a2a5aeb9": {
+          "type": "questions",
+          "settings": {
+            "question": "Test Question 4",
+            "answer": "Test Answer 4"
           }
         }
       },
       "block_order": [
         "87d61ede-8aea-47ef-bc2c-91f9715208a1",
         "7233c398-1b82-4f77-aef4-5212a2f29353",
-        "4a81e614-6b2c-4dfd-8100-7226b1a64d0f"
+        "4a81e614-6b2c-4dfd-8100-7226b1a64d0f",
+        "34c143d3-c627-4007-8976-9eb0a2a5aeb9"
       ],
       "settings": {
       }
