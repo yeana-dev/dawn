@@ -5,6 +5,8 @@
 }
 
 .single-block-with-padding h1 {
+  font-family: "GothamMedium";
+  font-weight: 700;
   margin-top: 15px;
   margin-bottom: 25px;
   font-size: 24px;
@@ -13,11 +15,13 @@
 }
 
 .single-block-with-padding a {
+  font-family: "GothamMedium";
+  font-weight: 700;
   margin-top: 25px;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #453360;
-  padding: 15px 22px;
+  padding: 17px 25px 7px;
   border: 2px solid #453360;
   cursor: pointer;
   text-decoration: none;
